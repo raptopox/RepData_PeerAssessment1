@@ -66,7 +66,7 @@ img {
 
 <div id="loading-and-preprocessing-the-data" class="section level2">
 <h2>Loading and preprocessing the data</h2>
-<p>We first read the raw data from the file that (we assume) is in our current working directory into the data frame <code>data</code>.</p>
+<p>We first read the raw data from the <code>.zip</code> file that (we assume) is in our current working directory into the data frame <code>data</code>.</p>
 <pre class="r"><code>if (!file.exists(&quot;activity.csv&quot;)){
   unzip(&quot;activity.zip&quot;)
 }
@@ -170,7 +170,7 @@ head(totalstepsPerDayNoNA)</code></pre>
 <p>…and the median of these numbers.</p>
 <pre class="r"><code>median(totalstepsPerDayNoNA$totalsteps, na.rm=TRUE)</code></pre>
 <pre><code>## [1] 10766.19</code></pre>
-<p>We can now see that the values for the mean in the processed data frame <code>dataNoNA</code> is the same as in the original data frame <code>data</code>, and this is because we chose to replace <code>NA</code> values with the mean. On the other hand, the median is different.</p>
+<p>We can now see that the values for the mean in the processed data frame <code>dataNoNA</code> is the same as in the original data frame <code>data</code>, and this is because we chose to replace <code>NA</code> values with the mean. On the other hand, the median is different from the case where <code>NA</code>’s where not taken into account.</p>
 </div>
 <div id="are-there-differences-in-activity-patterns-between-weekdays-and-weekends" class="section level2">
 <h2>Are there differences in activity patterns between weekdays and weekends?</h2>

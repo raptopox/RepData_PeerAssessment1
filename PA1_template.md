@@ -3,7 +3,7 @@
 
 ## Loading and preprocessing the data
 
-We first read the raw data from the file that (we assume) is in our current working directory into the data frame `data`.
+We first read the raw data from the `.zip` file that (we assume) is in our current working directory into the data frame `data`.
 
 
 ```r
@@ -228,7 +228,7 @@ median(totalstepsPerDayNoNA$totalsteps, na.rm=TRUE)
 ## [1] 10766.19
 ```
 
-We can now see that the values for the mean in the processed data frame `dataNoNA` is the same as in the original data frame `data`, and this is because we chose to replace `NA` values with the mean. On the other hand, the median is different.
+We can now see that the values for the mean in the processed data frame `dataNoNA` is the same as in the original data frame `data`, and this is because we chose to replace `NA` values with the mean. On the other hand, the median is different from the case where `NA`'s where not taken into account.
 
 
 ## Are there differences in activity patterns between weekdays and weekends?
