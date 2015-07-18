@@ -20,7 +20,7 @@ data <- read.csv("activity.csv")
 str(data)
 ```
 
-We convert the date column into `POSIXct` format, which will be useful later when applying the ``weekdays()` function.
+We convert the date column into `POSIXct` format, which will be useful later when applying the ``weekdays()` function. Although irrelevant, we set the time zone to GMT. 
 
 ```{r}
 data$date <- as.POSIXct(data$date, tz="GMT")

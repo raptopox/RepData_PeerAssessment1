@@ -77,7 +77,7 @@ str(data)</code></pre>
 ##  $ steps   : int  NA NA NA NA NA NA NA NA NA NA ...
 ##  $ date    : Factor w/ 61 levels &quot;2012-10-01&quot;,&quot;2012-10-02&quot;,..: 1 1 1 1 1 1 1 1 1 1 ...
 ##  $ interval: int  0 5 10 15 20 25 30 35 40 45 ...</code></pre>
-<p>We convert the date column into <code>POSIXct</code> format, which will be useful later when applying the `<code>weekdays()</code> function.</p>
+<p>We convert the date column into <code>POSIXct</code> format, which will be useful later when applying the `<code>weekdays()</code> function. Although irrelevant, we set the time zone to GMT.</p>
 <pre class="r"><code>data$date &lt;- as.POSIXct(data$date, tz=&quot;GMT&quot;)
 str(data)</code></pre>
 <pre><code>## 'data.frame':    17568 obs. of  3 variables:

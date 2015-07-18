@@ -22,7 +22,7 @@ str(data)
 ##  $ interval: int  0 5 10 15 20 25 30 35 40 45 ...
 ```
 
-We convert the date column into `POSIXct` format, which will be useful later when applying the ``weekdays()` function.
+We convert the date column into `POSIXct` format, which will be useful later when applying the ``weekdays()` function. Although irrelevant, we set the time zone to GMT. 
 
 
 ```r
